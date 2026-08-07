@@ -99,7 +99,7 @@ export default function Page() {
         <div className="section-shell rooted-story-inner">
           <div className="rooted-story-copy">
             <p className="eyebrow">Our story</p>
-            <h2>ROOTED IN KOLHAPUR,<br />INSPIRED BY SOUTH</h2>
+            <h2 className="rooted-story-heading">Rooted in <em>Kolhapur</em>,<br />Inspired by <em>South</em></h2>
           </div>
         </div>
       </section>

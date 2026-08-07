@@ -90,7 +90,9 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .rooted-story { min-height: 620px; background-color: #efe3d7; background-position: center; background-repeat: no-repeat; background-size: cover; color: #25231f; }
 .rooted-story-inner { display: flex; min-height: 620px; align-items: center; justify-content: flex-end; padding: 100px 0; }
 .rooted-story-copy { width: min(100%, 470px); padding: 40px 0 40px 40px; }
-.rooted-story-copy h2 { margin: 20px 0 0; font-family: var(--font-body), sans-serif; font-size: clamp(2.8rem, 5.5vw, 5.8rem); font-weight: 600; letter-spacing: -.055em; line-height: .92; text-wrap: balance; }
+.rooted-story-copy h2 { margin: 20px 0 0; }
+.rooted-story-heading { width: 100%; max-width: 72rem; font-family: var(--font-display), serif; font-size: clamp(2.8rem, 5.4vw, 5.7rem); font-weight: 400; letter-spacing: -.045em; line-height: .95; text-wrap: balance; }
+.rooted-story-heading em { color: var(--muted-foreground); font-style: italic; }
 .rooted-story-copy .eyebrow { color: #008000; }
 .story-copy h2, .section-heading h2, .values-grid h2, .locations-section h2, .contact-copy h2 { margin: 20px 0 28px; font-size: clamp(3.7rem, 6vw, 6.5rem); line-height: .85; }
 .light-link { color: #fff7ed; }
