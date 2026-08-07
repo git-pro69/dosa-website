@@ -79,11 +79,13 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .hero-text-link { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid currentColor; padding-bottom: 6px; color: #fff; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 400; }
 .hero-side-note { position: absolute; right: 0; bottom: 38px; color: rgba(255, 255, 255, .8); font-size: .67rem; letter-spacing: .13em; line-height: 1.6; text-align: right; text-transform: uppercase; }
 
-.statement { display: grid; grid-template-columns: 110px 1fr 260px; gap: 28px; align-items: start; padding: 115px 0; border-top: 1px solid var(--border); background-color: rgb(235, 224, 212); }
+.statement { display: grid; grid-template-columns: 110px 1fr 260px; gap: 28px; align-items: start; padding: 115px 0; border-top: 1px solid var(--border); background-color: rgb(0, 128, 0); }
 .ornament { color: var(--primary); font-size: 2rem; }
-.display-copy { margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; }
+.display-copy { margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; color: rgb(255, 255, 255); }
+.display-copy span { color: rgb(255, 173, 23); }
 .statement-detail { padding-top: 8px; }
-.statement-detail p { margin-top: 17px; color: var(--muted-foreground); font-size: .87rem; line-height: 1.7; font-family: "Inter", sans-serif; }
+.statement-detail p { margin-top: 17px; color: rgb(255, 255, 255); font-size: .87rem; line-height: 1.7; font-family: "Inter", sans-serif; text-align: justify; }
+.statement-detail .eyebrow { color: rgb(255, 255, 255); font-family: "Inter", sans-serif; font-size: 14px; }
 
 .dark-story { background: #211f1c; color: #f9f3eb; }
 .story-grid { display: grid; min-height: 690px; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; padding: 100px 0; }
