@@ -21,6 +21,7 @@ const images = {
   dosa: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jfPnRqnThQ5Fyj862D8FR5cvkfVbys.png',
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
   exterior: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-P24nNopibFdlIQ8f7yZlgQCoGOa0LF.jpeg',
+  storyBackdrop: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Mdu2zOaLdUwZtYrmHMIYlmA4XAtxIS.png',
 }
 
 const navItems = [
@@ -94,10 +95,12 @@ export default function Page() {
         <div className="statement-detail"><span className="eyebrow">The house note</span><p>From a first tawa at dawn to the last filter coffee of the evening, everything here is made with patience, generosity, and a very particular love for ghee.</p></div>
       </section>
 
-      <section id="story" className="dark-story">
-        <div className="section-shell story-grid">
-          <div className="story-image"><img src={images.exterior} alt="Guests arriving outside Davangiri Loni Dosa in the evening" /></div>
-          <div className="story-copy"><p className="eyebrow">Our story</p><h2>Not fast food.<br /><em>Food with a pulse.</em></h2><p>We started with one iron tawa, a family recipe, and a belief that the best food does not need to shout. It just needs to be hot, honest, and shared across a table.</p><a className="light-link" href="#contact">Meet us at the cafe <ArrowUpRight size={17} /></a></div>
+      <section id="story" className="rooted-story" style={{ backgroundImage: `url("${images.storyBackdrop}")` }}>
+        <div className="section-shell rooted-story-inner">
+          <div className="rooted-story-copy">
+            <p className="eyebrow">Our story</p>
+            <h2>ROOTED IN KOLHAPUR,<br />INSPIRED BY SOUTH</h2>
+          </div>
         </div>
       </section>
 
