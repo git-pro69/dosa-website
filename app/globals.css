@@ -93,7 +93,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .rooted-story-copy { width: min(100%, 470px); padding: 40px 0 40px 40px; }
 .rooted-story-copy h2 { margin: 20px 0 0; }
 .rooted-story-heading { width: 100%; max-width: 72rem; font-family: var(--font-display), serif; font-size: clamp(2.8rem, 5.4vw, 5.7rem); font-weight: 400; letter-spacing: -.045em; line-height: .95; text-transform: uppercase; text-wrap: balance; }
-.rooted-story-heading em { color: var(--muted-foreground); font-style: italic; }
+.rooted-story-heading em { color: var(--primary); font-style: normal; border-color: var(--primary); }
 .rooted-story-copy .eyebrow { color: #25231f; font-family: "Inter", sans-serif; font-size: 18px; font-weight: 500; }
 .story-copy h2, .section-heading h2, .values-grid h2, .locations-section h2, .contact-copy h2 { margin: 20px 0 28px; font-size: clamp(3.7rem, 6vw, 6.5rem); line-height: .85; }
 .light-link { color: #fff7ed; }
