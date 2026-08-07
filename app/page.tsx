@@ -96,6 +96,7 @@ export default function Page() {
       </section>
 
       <section id="story" className="rooted-story" style={{ backgroundImage: `url("${images.storyBackdrop}")` }}>
+        <div className="rooted-story-mobile-image"><img src={images.storyBackdrop} alt="Hazy evening view of Kolhapur waterfront" /></div>
         <div className="section-shell rooted-story-inner">
           <div className="rooted-story-copy">
             <p className="eyebrow">Our story</p>
