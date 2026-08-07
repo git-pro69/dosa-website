@@ -1,5 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
-import { Cormorant_Garamond, DM_Sans, Inter, Geist } from 'next/font/google'
+import { Cormorant_Garamond, DM_Sans, Inter, Geist, Montserrat, Open_Sans } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
@@ -27,6 +27,18 @@ const geist = Geist({
   weight: ['400', '500', '600', '700'],
 })
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  weight: ['400', '500', '600', '700'],
+})
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  variable: '--font-open-sans',
+  weight: ['400', '500', '600', '700'],
+})
+
 export const metadata: Metadata = {
   title: 'Davangiri Loni Dosa | South Indian Soul, Modern Bite',
   description: 'Crisp dosas, slow filter coffee, and warm South Indian hospitality in Bengaluru and Hyderabad.',
@@ -41,7 +53,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="bg-background">
-      <body className={`${display.variable} ${body.variable} ${inter.variable} ${geist.variable} antialiased`}>
+      <body className={`${display.variable} ${body.variable} ${inter.variable} ${geist.variable} ${montserrat.variable} ${openSans.variable} antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

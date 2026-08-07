@@ -76,8 +76,8 @@ export default function Page() {
         <div className="hero-overlay" aria-hidden="true" />
         <div className="hero-inner section-shell">
           <div className="hero-copy reveal-up">
-            <p className="eyebrow">A Bengaluru original · Est. 2018</p>
-            <h1>दावणगिरी लोणी<br /><em>डोसा</em></h1>
+            <p className="eyebrow">A Bengaluru original · Est. 2000</p>
+            <h1>South Indian soul,<br /><em>Dosa </em></h1>
             <p className="hero-intro">A little more butter. A lot more feeling. We make the dosa you remember, the coffee you crave, and the kind of mornings you want to repeat.</p>
             <div className="hero-actions">
               <a className="hero-button" href="#menu">View menu <ArrowDownRight size={18} /></a>
