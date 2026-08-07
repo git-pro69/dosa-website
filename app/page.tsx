@@ -21,6 +21,7 @@ const images = {
   dosa: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jfPnRqnThQ5Fyj862D8FR5cvkfVbys.png',
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
   exterior: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-P24nNopibFdlIQ8f7yZlgQCoGOa0LF.jpeg',
+  rooted: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i04pBiQrIi3bu50xjmxeVwkZT804Ud.png',
 }
 
 const navItems = [
@@ -88,10 +89,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="statement section-shell">
-        <div className="ornament" aria-hidden="true">✣</div>
-        <p className="display-copy">Our cafe is our <span>temple.</span><br />Our customers are <span>gods.</span><br />And what we serve is <span>prasad</span>.</p>
-        <div className="statement-detail"><span className="eyebrow">The house note</span><p>From a first tawa at dawn to the last filter coffee of the evening, everything here is made with patience, generosity, and a very particular love for ghee.</p></div>
+      <section className="statement">
+        <div className="statement-content">
+          <p className="display-copy">ROOTED IN KOLHAPUR,<br /><span>INSPIRED BY SOUTH</span></p>
+        </div>
       </section>
 
       <section id="story" className="dark-story">
