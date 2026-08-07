@@ -74,7 +74,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .image-caption span { color: var(--primary); }
 .hero-side-note { position: absolute; right: 0; bottom: 38px; color: var(--muted-foreground); font-size: .67rem; letter-spacing: .13em; line-height: 1.6; text-align: right; text-transform: uppercase; }
 
-.statement { display: grid; grid-template-columns: 110px 1fr 260px; gap: 28px; align-items: start; padding: 115px 0; border-top: 1px solid var(--border); }
+.statement { display: grid; grid-template-columns: 110px 1fr 260px; gap: 28px; align-items: start; padding: 115px 0; border-top: 1px solid var(--border); background-color: rgb(235, 224, 212); }
 .ornament { color: var(--primary); font-size: 2rem; }
 .display-copy { margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; }
 .statement-detail { padding-top: 8px; }
@@ -126,11 +126,11 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .gallery-strip > div { display: flex; flex-direction: column; justify-content: center; padding: 40px; }
 .gallery-strip h2 { margin: 20px 0; font-size: clamp(2.8rem, 4vw, 4.5rem); line-height: .88; }
 
-.quotes-section { padding: 145px 0 160px; text-align: center; }
+.quotes-section { padding: 145px 0 160px; text-align: center; background-color: rgb(235, 224, 212); }
 .quotes-section .eyebrow { text-align: left; }
 .quote-mark { margin-top: 60px; color: var(--primary); font-family: Georgia, serif; font-size: 8rem; line-height: .45; }
 blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 5rem); line-height: .95; }
-.quote-source { color: var(--muted-foreground); font-size: .8rem; }
+.quote-source { color: var(--muted-foreground); font-size: .8rem; font-family: "Inter", sans-serif; }
 
 .contact-section { background: #211f1c; color: #f9f3eb; padding: 140px 0; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 120px; }

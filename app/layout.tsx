@@ -1,5 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
-import { Cormorant_Garamond, DM_Sans, Inter } from 'next/font/google'
+import { Cormorant_Garamond, DM_Sans, Inter, Geist } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
@@ -21,6 +21,12 @@ const inter = Inter({
   weight: ['400', '500', '600', '700'],
 })
 
+const geist = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist',
+  weight: ['400', '500', '600', '700'],
+})
+
 export const metadata: Metadata = {
   title: 'Davangiri Loni Dosa | South Indian Soul, Modern Bite',
   description: 'Crisp dosas, slow filter coffee, and warm South Indian hospitality in Bengaluru and Hyderabad.',
@@ -35,7 +41,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="bg-background">
-      <body className={`${display.variable} ${body.variable} ${inter.variable} antialiased`}>
+      <body className={`${display.variable} ${body.variable} ${inter.variable} ${geist.variable} antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
