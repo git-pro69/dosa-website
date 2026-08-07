@@ -22,6 +22,7 @@ const images = {
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
   exterior: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-P24nNopibFdlIQ8f7yZlgQCoGOa0LF.jpeg',
   storyBackdrop: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Mdu2zOaLdUwZtYrmHMIYlmA4XAtxIS.png',
+  storyMobile: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-KlspiVwZEplnvVAYhZH8QEAKxpZIKh.png',
 }
 
 const navItems = [
@@ -96,7 +97,7 @@ export default function Page() {
       </section>
 
       <section id="story" className="rooted-story" style={{ backgroundImage: `url("${images.storyBackdrop}")` }}>
-        <div className="rooted-story-mobile-image"><img src={images.storyBackdrop} alt="Hazy evening view of Kolhapur waterfront" /></div>
+        <div className="rooted-story-mobile-image"><img src={images.storyMobile} alt="Hazy evening view of Kolhapur waterfront" /></div>
         <div className="section-shell rooted-story-inner">
           <div className="rooted-story-copy">
             <p className="eyebrow">Our story</p>
