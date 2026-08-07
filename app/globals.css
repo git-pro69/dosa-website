@@ -62,17 +62,19 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .nav-cta, .contact-form button { display: inline-flex; align-items: center; gap: 8px; background: var(--primary); color: var(--primary-foreground); padding: 12px 18px; }
 .menu-toggle { display: none; border: 0; background: transparent; }
 
-.hero { position: relative; display: grid; min-height: 680px; grid-template-columns: .78fr 1.22fr; align-items: center; gap: 50px; padding: 70px 0 100px; background-color: #008000; }
-.hero-copy { max-width: 470px; }
-.hero h1 { margin: 23px 0 24px; font-size: clamp(4.2rem, 7.6vw, 7.7rem); line-height: .86; color: rgb(255, 255, 255); }
+.hero { position: relative; isolation: isolate; display: flex; min-height: min(780px, calc(100svh - 82px)); align-items: center; overflow: hidden; background: #211f1c; color: #fffaf2; }
+.hero-video, .hero-overlay { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-video { z-index: 0; object-fit: cover; object-position: center; }
+.hero-overlay { z-index: 1; background: linear-gradient(90deg, rgba(20, 15, 10, .78) 0%, rgba(20, 15, 10, .5) 42%, rgba(20, 15, 10, .14) 100%); pointer-events: none; }
+.hero-inner { position: relative; z-index: 2; display: flex; min-height: inherit; width: min(1240px, calc(100% - 80px)); align-items: center; justify-content: space-between; padding: 96px 0 105px; }
+.hero-copy { max-width: 540px; }
+.hero h1 { margin: 23px 0 24px; font-size: clamp(4.2rem, 7.6vw, 7.7rem); line-height: .86; color: rgb(255, 255, 255); text-wrap: balance; }
 .hero-intro { max-width: 365px; color: rgb(255, 255, 255); font-size: 1rem; line-height: 1.7; font-family: "Inter", sans-serif; }
-.text-link, .light-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; border-bottom: 1px solid currentColor; padding-bottom: 6px; font-size: .82rem; font-weight: 700; transition: color .2s ease; }
-.hero .text-link { color: rgb(255, 255, 255); font-family: "Inter", sans-serif; font-weight: 600; }
-.hero-image-wrap { position: relative; }
-.hero-image { width: 100%; height: 560px; object-fit: cover; }
-.image-caption { position: absolute; right: 16px; bottom: 16px; background: var(--background); padding: 9px 12px; font-family: var(--font-display), serif; font-size: 1rem; }
-.image-caption span { color: var(--primary); }
-.hero-side-note { position: absolute; right: 0; bottom: 38px; color: var(--muted-foreground); font-size: .67rem; letter-spacing: .13em; line-height: 1.6; text-align: right; text-transform: uppercase; }
+.hero-actions { display: flex; align-items: center; gap: 24px; margin-top: 26px; }
+.hero-button { display: inline-flex; align-items: center; gap: 10px; background: #d97910; color: #fffaf2; padding: 14px 18px; font-family: "Inter", sans-serif; font-size: .82rem; font-weight: 600; }
+.hero-button:hover { background: #f0992b; }
+.hero-text-link { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid currentColor; padding-bottom: 6px; color: #fff; font-family: "Inter", sans-serif; font-size: .82rem; font-weight: 600; }
+.hero-side-note { position: absolute; right: 0; bottom: 38px; color: rgba(255, 255, 255, .8); font-size: .67rem; letter-spacing: .13em; line-height: 1.6; text-align: right; text-transform: uppercase; }
 
 .statement { display: grid; grid-template-columns: 110px 1fr 260px; gap: 28px; align-items: start; padding: 115px 0; border-top: 1px solid var(--border); background-color: rgb(235, 224, 212); }
 .ornament { color: var(--primary); font-size: 2rem; }
@@ -167,9 +169,12 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
   .desktop-nav.is-open { display: flex; }
   .desktop-nav a { padding: 14px 0; }
   .desktop-nav .nav-cta { justify-content: center; }
-  .hero { display: flex; flex-direction: column; align-items: stretch; gap: 42px; padding: 75px 0 80px; }
+  .hero { min-height: 680px; }
+  .hero-inner { width: min(100% - 40px, 600px); padding: 72px 0 80px; }
+  .hero-overlay { background: linear-gradient(180deg, rgba(20, 15, 10, .65) 0%, rgba(20, 15, 10, .5) 48%, rgba(20, 15, 10, .72) 100%); }
+  .hero-video { object-position: 58% center; }
   .hero h1 { font-size: clamp(4rem, 18vw, 6rem); }
-  .hero-image { height: 390px; }
+  .hero-actions { gap: 18px; }
   .hero-side-note { display: none; }
   .statement { grid-template-columns: 1fr; gap: 20px; padding: 80px 0; }
   .statement-detail { max-width: 340px; padding-left: 42px; }
