@@ -40,7 +40,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--background); }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-body), sans-serif; }
-main { background-color: rgb(0, 128, 0); }
+main { background-color: rgb(235, 224, 212); }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 button, input, textarea { font: inherit; }
@@ -52,7 +52,7 @@ button { cursor: pointer; }
 .hero h1, h2, h3, blockquote, .display-copy { font-family: var(--font-display), serif; font-weight: 400; letter-spacing: -.045em; }
 h1, h2, h3, p { margin-top: 0; }
 h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
-.hero h1 em { color: rgb(255, 245, 11); font-weight: 700; font-style: italic; }
+.hero h1 em { color: rgb(255, 245, 11); font-weight: 400; font-style: italic; }
 
 .site-header { position: sticky; top: 0; z-index: 10; display: flex; height: 82px; align-items: center; justify-content: space-between; padding: 0 40px; background: color-mix(in srgb, var(--background) 92%, transparent); border-bottom: 1px solid var(--border); backdrop-filter: blur(14px); }
 .brand-mark img { width: 90px; height: auto; }
@@ -68,7 +68,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .hero-overlay { z-index: 1; background: linear-gradient(90deg, rgba(20, 15, 10, .78) 0%, rgba(20, 15, 10, .5) 42%, rgba(20, 15, 10, .14) 100%); pointer-events: none; }
 .hero-inner { position: relative; z-index: 2; display: flex; min-height: inherit; width: min(1240px, calc(100% - 80px)); align-items: center; justify-content: space-between; padding: 96px 0 105px; }
 .hero-copy { max-width: 540px; }
-.hero h1 { margin: 23px 0 24px; font-size: clamp(4.2rem, 7.6vw, 7.7rem); line-height: .86; color: rgb(255, 255, 255); text-wrap: balance; }
+.hero h1 { margin: 23px 0 24px; font-size: 72px; line-height: .86; color: rgb(255, 255, 255); text-wrap: balance; text-align: left; }
 .hero-intro { max-width: 365px; color: rgb(255, 255, 255); font-size: 1rem; line-height: 1.7; font-family: "Inter", sans-serif; }
 .hero-actions { display: flex; align-items: center; gap: 24px; margin-top: 26px; }
 .hero-button { display: inline-flex; align-items: center; gap: 10px; background: #d97910; color: #fffaf2; padding: 14px 18px; font-family: "Inter", sans-serif; font-size: .82rem; font-weight: 600; }
@@ -80,7 +80,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .ornament { color: var(--primary); font-size: 2rem; }
 .display-copy { margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; }
 .statement-detail { padding-top: 8px; }
-.statement-detail p { margin-top: 17px; color: var(--muted-foreground); font-size: .87rem; line-height: 1.7; }
+.statement-detail p { margin-top: 17px; color: var(--muted-foreground); font-size: .87rem; line-height: 1.7; font-family: "Inter", sans-serif; }
 
 .dark-story { background: #211f1c; color: #f9f3eb; }
 .story-grid { display: grid; min-height: 690px; grid-template-columns: 1fr 1fr; align-items: center; gap: 100px; padding: 100px 0; }
