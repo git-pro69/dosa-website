@@ -26,6 +26,7 @@ const images = {
 
 const navItems = [
   { label: 'Our story', href: '#story' },
+  { label: 'About', href: '/about' },
   { label: 'Menu', href: '#menu' },
   { label: 'Locations', href: '#locations' },
   { label: 'Contact', href: '#contact' },
