@@ -39,7 +39,7 @@ export default function AboutPage() {
       <section className="brand-ad" aria-label="Davangiri Loni Dosa story">
         <img className="brand-ad-leaf" src={images.brandLeaf} alt="Green botanical Davangiri emblem" />
         <div className="brand-ad-copy">
-          <p className="eyebrow">Davangiri Loni Dosa</p>
+          <p className="eyebrow">दावणगिरी लोणी डोसा</p>
           <h2>South Indian Soul,<br /><em>Modern Bite.</em></h2>
           <p>Hot off the tawa, rooted in tradition, and made for the way you eat now.</p>
         </div>
