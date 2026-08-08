@@ -40,7 +40,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--background); }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-body), sans-serif; }
-main { background-color: transparent; background-image: linear-gradient(90deg, rgba(248, 242, 233, 0.96), rgba(248, 242, 233, 0.64)), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxzDydxPFh4u9QREMx6HKlQV8NfDwW.png"); }
+main { background-color: transparent; background-image: none; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 button, input, textarea { font: inherit; }
@@ -241,7 +241,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 .about-hero h1 { margin: 24px 0 0; color: var(--foreground); font-size: clamp(4rem, 8vw, 7rem); line-height: .92; }
 .about-hero h1 em { color: var(--foreground); }
 .about-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 110px 0; }
-.about-intro > img { width: 100%; height: 520px; object-fit: cover; }
+.about-intro > img { width: 100%; height: auto; max-height: 620px; object-fit: contain; object-position: center; }
 .about-intro-copy h2, .about-founders h2, .about-ideology h2, .about-values h2, .about-fresh h2, .about-sustainability h2 { margin: 0 0 24px; font-size: clamp(2.8rem, 5vw, 5.2rem); line-height: .92; }
 .about-intro-copy h2 em, .about-founders h2 em, .about-ideology h2 em, .about-values h2 em, .about-fresh h2 em, .about-sustainability h2 em { color: var(--primary); }
 .about-intro-copy > p, .about-founders > div > p:not(.eyebrow), .about-ideology p, .about-sustainability .about-shell > p:last-child { max-width: 430px; color: var(--muted-foreground); font-size: .86rem; line-height: 1.7; }
@@ -272,7 +272,8 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
   .about-hero { min-height: 480px; }
   .about-hero h1 { font-size: clamp(3.4rem, 15vw, 5rem); }
   .about-intro, .about-founders, .about-ideology-inner, .about-fresh { grid-template-columns: 1fr; gap: 38px; padding: 75px 0; }
-  .about-intro > img, .about-founders > img { height: 360px; }
+  .about-intro > img { height: auto; max-height: none; object-fit: contain; }
+  .about-founders > img { height: 360px; }
   .about-ideology-inner > img { height: 420px; }
   .about-ideology-inner > div { padding: 0 0 75px; }
   .about-values { padding: 80px 0; }

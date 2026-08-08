@@ -6,6 +6,7 @@ import { useState } from 'react'
 const images = {
   logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5bxAFzSYeAh0O8GfL2yvpqErduZWsP.png',
   cafe: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EoJF11KAiTDtwX7IoFw1CMSpeE83HT.png',
+  storefront: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-D8I9Wxi83qdzwEUDMXCDBip9rAYuSj.png',
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
   dosa: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jfPnRqnThQ5Fyj862D8FR5cvkfVbys.png',
   heroTexture: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-axL60KLm5JxoSQ2vmVZcAXpbYe7aEl.png',
@@ -45,7 +46,7 @@ export default function AboutPage() {
       </section>
 
       <section className="about-intro about-shell">
-        <img src={images.cafe} alt="Davangiri Loni Dosa cafe exterior decorated for guests" />
+        <img src={images.storefront} alt="Davangiri Loni Dosa storefront and cafe interior" />
         <div className="about-intro-copy"><h2>Our Cafe is our <em>Temple</em>,<br />Our Customers are <em>Gods</em>,<br />& What we serve, is <em>Prasadam</em></h2><p>The Davangiri Loni Dosa cafe is a premium South Indian chain by M. Abilton Venkatesh Pillai. We serve authentic cuisine that is fresh, hot, and true to tradition. Every meal is made with care, hygiene, and heart.</p></div>
       </section>
 
