@@ -249,7 +249,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 .menu-reference-copy h1 { margin: 0; color: #292624; font-family: var(--font-display), serif; font-size: clamp(4rem, 8vw, 7.5rem); font-weight: 400; letter-spacing: -.065em; line-height: .86; }
 .menu-reference-copy h1 em { color: #292624; font-style: normal; }
 .menu-video-story { display: grid; grid-template-columns: 1.06fr .94fr; align-items: center; gap: 80px; padding-top: 130px; padding-bottom: 130px; }
-.menu-video-wrap { position: relative; min-height: min(45vw, 560px); overflow: hidden; background: #211f1c; color: #fffaf2; }
+.menu-page .menu-video-wrap, .menu-page .menu-video, .menu-page .menu-video-story { display: none; }
 .menu-video-copy h2 { margin: 22px 0 25px; font-size: clamp(3.8rem, 6vw, 6.5rem); line-height: .84; }
 .menu-video-copy > p:not(.eyebrow) { max-width: 390px; margin-bottom: 30px; color: var(--muted-foreground); font-size: .95rem; line-height: 1.8; }
 .menu-video { display: block; width: 100%; height: 100%; min-height: inherit; object-fit: cover; object-position: center; }
