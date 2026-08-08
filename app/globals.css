@@ -61,7 +61,8 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .hero h1 em { color: rgb(255, 245, 11); font-weight: 400; font-style: italic; font-family: "Open Sans", sans-serif; }
 
 .site-header { position: sticky; top: 0; z-index: 10; display: flex; height: 82px; align-items: center; justify-content: space-between; padding: 0 40px; background: color-mix(in srgb, var(--background) 92%, transparent); border-bottom: 1px solid var(--border); backdrop-filter: blur(14px); }
-.brand-mark img { width: 90px; height: auto; object-fit: contain; }
+.brand-mark { display: inline-flex; height: 100%; align-items: center; overflow: hidden; }
+.brand-mark img { width: 90px; height: 74px; object-fit: contain; }
 .desktop-nav { display: flex; align-items: center; gap: 31px; font-size: 14px; font-family: "Inter", sans-serif; }
 .desktop-nav a { transition: color .2s ease; }
 .desktop-nav a:hover, .text-link:hover, .light-link:hover { color: var(--primary); }
@@ -75,7 +76,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .hero-overlay { z-index: 1; background: linear-gradient(90deg, rgba(20, 15, 10, .78) 0%, rgba(20, 15, 10, .5) 42%, rgba(20, 15, 10, .14) 100%); pointer-events: none; }
 .hero-inner { position: relative; z-index: 2; display: flex; min-height: inherit; width: min(1240px, calc(100% - 80px)); align-items: center; justify-content: center; padding: 96px 0 105px; text-align: center; }
 .hero-copy { width: 100%; max-width: 72rem; display: flex; flex-direction: column; align-items: center; }
-.hero .hero-intro { width: 100%; max-width: 72rem; margin-left: auto; margin-right: auto; }
+.hero .hero-intro { width: 100%; max-width: 64rem; margin-left: auto; margin-right: auto; }
 .hero-actions { justify-content: center; }
 .hero-side-note { display: none; }
 .hero h1 { margin: 23px 0 24px; font-size: 72px; line-height: 1.25; color: rgb(255, 255, 255); text-wrap: balance; text-align: center; font-family: "Geist", sans-serif; }
@@ -100,7 +101,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .display-copy { width: 100%; max-width: 72rem; margin: 0; font-size: 48px; line-height: .95; color: rgb(37, 35, 31); text-align: center; }
 .display-copy span { color: rgb(217, 121, 16); }
 .statement-detail { width: 100%; max-width: 72rem; padding-top: 0; text-align: center; }
-.statement-detail p { width: 100%; max-width: 72rem; margin: 17px auto 0; color: rgb(113, 105, 95); font-size: 14px; line-height: 1.7; font-family: "Inter", sans-serif; text-align: center; }
+.statement-detail p { width: 100%; max-width: 64rem; margin: 17px auto 0; color: rgb(113, 105, 95); font-size: 14px; line-height: 1.7; font-family: "Inter", sans-serif; text-align: center; }
 .statement-detail .eyebrow { color: rgb(37, 35, 31); font-family: "Inter", sans-serif; font-size: 14px; }
 
 .rooted-story { min-height: 620px; background-color: #efe3d7; background-position: center; background-repeat: no-repeat; background-size: cover; color: #25231f; }
