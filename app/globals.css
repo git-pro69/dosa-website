@@ -242,7 +242,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 .about-hero h1 { margin: 24px 0 0; color: var(--foreground); font-size: clamp(4rem, 8vw, 7rem); line-height: .92; }
 .about-hero h1 em { color: var(--foreground); }
 .about-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 110px 0; }
-.about-intro > img { width: 100%; height: auto; max-height: 620px; object-fit: contain; object-position: center; }
+.about-intro > img, .about-intro-media { width: 100%; height: auto; max-height: 620px; object-fit: contain; object-position: center; }
 .about-intro-copy h2, .about-founders h2, .about-ideology h2, .about-values h2, .about-fresh h2, .about-sustainability h2 { margin: 0 0 24px; font-size: 48px; line-height: .92; }
 .about-intro-copy h2 em, .about-founders h2 em, .about-ideology h2 em, .about-values h2 em, .about-fresh h2 em, .about-sustainability h2 em { color: var(--primary); }
 .about-intro-copy > p, .about-founders > div > p:not(.eyebrow), .about-ideology p, .about-sustainability .about-shell > p:last-child { max-width: 430px; color: var(--muted-foreground); font-size: .86rem; line-height: 1.7; }
@@ -274,7 +274,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
   .about-hero { min-height: 480px; }
   .about-hero h1 { font-size: clamp(3.4rem, 15vw, 5rem); }
   .about-intro, .about-founders, .about-ideology-inner, .about-fresh { grid-template-columns: 1fr; gap: 38px; padding: 75px 0; }
-  .about-intro > img { height: auto; max-height: none; object-fit: contain; }
+  .about-intro > img, .about-intro-media { height: auto; max-height: none; object-fit: contain; }
   .about-founders > img { height: 360px; }
   .about-ideology-inner > img { height: 420px; }
   .about-ideology-inner > div { padding: 0 0 75px; }
