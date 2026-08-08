@@ -12,6 +12,7 @@ const images = {
   heroTexture: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-axL60KLm5JxoSQ2vmVZcAXpbYe7aEl.png',
   story: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XZ2lMuRF2rfIKq1ByB5unQwxe3tuKU.png',
   brandLeaf: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2842%29-josVdKhrWztoNGP3257mYMMguS0vfc.png',
+  warningLeaf: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2842%29-V9TFZ6tQNEmNr9NDUL36iv20orISWZ.png',
   cafeVideo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TREND%20%E0%A4%A8%E0%A4%BE%E0%A4%B9%E0%A5%80%2C%20%E0%A4%AA%E0%A4%B0%E0%A4%82%E0%A4%AA%E0%A4%B0%E0%A5%87%E0%A4%9A%E0%A5%80%20%E0%A4%9A%E0%A4%B5%20%E0%A4%86%E0%A4%B9%E0%A5%87%20%E2%80%94%20%E0%A4%9C%E0%A5%80%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%82%20%E0%A4%9F%E0%A4%BF%E0%A4%95%E0%A5%82%E0%A4%A8%20%E0%A4%86%E0%A4%B9%E0%A5%87%21%20%F0%9F%92%9B.Location-%20%E0%A4%A6%E0%A4%BE%E0%A4%B5%E0%A4%A3%E0%A4%97%E0%A4%BF%E0%A4%B0%E0%A5%80%20%E0%A4%B2%E0%A5%8B%E0%A4%A3%E0%A5%80%20%E0%A4%A1%E0%A5%8B%E0%A4%B8%EF%BF%BD-3xVQQaJROkRrLHYdYh04kgY0rAos1j.mp4',
 }
 
@@ -36,6 +37,8 @@ export default function AboutPage() {
         </nav>
         <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button>
       </header>
+
+      <section className="menu-reference-hero about-warning" aria-label="Warning: Cravings Ahead"><img className="menu-reference-art" src={images.warningLeaf} alt="" aria-hidden="true" /><div className="menu-reference-copy"><h1>Warning:<br /><em>Cravings Ahead</em></h1></div></section>
 
       <section className="brand-ad" aria-label="Davangiri Loni Dosa story">
         <img className="brand-ad-leaf" src={images.brandLeaf} alt="Green botanical Davangiri emblem" />

@@ -280,6 +280,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 .menu-cta h2 em { color: var(--primary); }
 
 .about-page { background: var(--background); }
+.about-warning { min-height: min(54vw, 620px); background: #f7f1eb; }
 .about-shell { width: min(1240px, calc(100% - 80px)); margin: 0 auto; }
 .about-hero { min-height: 610px; display: flex; align-items: center; justify-content: center; background-color: var(--background); background-position: center; background-size: cover; text-align: center; }
 .about-hero-content { width: min(100% - 40px, 900px); padding: 100px 0; }
@@ -317,6 +318,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 .about-sustainability h2 { color: #f9f3eb; }
 @media (max-width: 800px) {
   .about-shell { width: min(100% - 40px, 600px); }
+  .about-warning { display: block; min-height: 74vw; visibility: visible; opacity: 1; }
   .about-hero { min-height: 480px; }
   .about-hero h1 { font-size: clamp(3.4rem, 15vw, 5rem); }
   .about-intro, .about-founders, .about-ideology-inner, .about-fresh { grid-template-columns: 1fr; gap: 38px; padding: 75px 0; }
