@@ -28,7 +28,7 @@ const images = {
 const navItems = [
   { label: 'Our story', href: '#story' },
   { label: 'About', href: '/about' },
-  { label: 'Menu', href: '#menu' },
+  { label: 'Menu', href: '/menu' },
   { label: 'Locations', href: '#locations' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -113,7 +113,7 @@ export default function Page() {
         <div className="menu-grid">
           {menuItems.map((item, index) => <article className={`menu-card ${index === 0 ? 'featured-card' : ''}`} key={item.name}><div className="menu-card-image"><img src={item.image} alt={item.name} /><span>{index === 0 ? 'House favourite' : 'Always on'}</span></div><div className="menu-card-info"><div><h3>{item.name}</h3><p>{item.detail}</p></div><strong>{item.price}</strong></div></article>)}
         </div>
-        <div className="menu-bottom"><span>Vegetarian kitchen · all day breakfast</span><a className="text-link" href="#contact">View full menu <ArrowUpRight size={17} /></a></div>
+        <div className="menu-bottom"><span>Vegetarian kitchen · all day breakfast</span><a className="text-link" href="/menu">View full menu <ArrowUpRight size={17} /></a></div>
       </section>
 
       <section className="values-section">
