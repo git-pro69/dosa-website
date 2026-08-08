@@ -332,8 +332,10 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 }
 
 @media (max-width: 800px) {
-  .menu-reference-hero { min-height: 74vw; }
-  .menu-reference-art { width: min(72vw, 340px); opacity: .1; }
+  .menu-reference-hero { height: clamp(360px, 74vw, 500px); min-height: 0; }
+  .menu-reference-art { z-index: 0; width: min(72vw, 340px); opacity: .1; }
+  .menu-reference-copy { z-index: 1; }
+  .menu-reference-copy h1 { position: relative; z-index: 1; }
   .menu-reference-copy h1 { font-size: clamp(3.25rem, 15vw, 5.5rem); }
   .menu-video-story { grid-template-columns: 1fr; gap: 42px; padding-top: 90px; padding-bottom: 90px; }
   .menu-video-wrap { min-height: 74vw; }
