@@ -90,7 +90,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 
 .statement { width: min(72rem, calc(100% - 80px)); display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 35px 0; border-top: 1px solid var(--border); background-color: color(srgb 0.972549 0.94902 0.913725 / 0.92); background-image: none; text-align: center; }
 .ornament { display: block; width: 52px; height: 52px; object-fit: contain; opacity: .18; filter: saturate(.85); }
-.display-copy { width: 100%; max-width: 72rem; margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; color: rgb(37, 35, 31); text-align: center; }
+.display-copy { width: 100%; max-width: 72rem; margin: 0; font-size: 48px; line-height: .95; color: rgb(37, 35, 31); text-align: center; }
 .display-copy span { color: rgb(217, 121, 16); }
 .statement-detail { width: 100%; max-width: 72rem; padding-top: 0; text-align: center; }
 .statement-detail p { width: 100%; max-width: 72rem; margin: 17px auto 0; color: rgb(113, 105, 95); font-size: 14px; line-height: 1.7; font-family: "Inter", sans-serif; text-align: center; }
