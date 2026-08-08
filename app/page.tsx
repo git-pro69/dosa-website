@@ -101,6 +101,7 @@ export default function Page() {
           <div className="rooted-story-copy">
             <p className="eyebrow">Our story</p>
             <h2 className="rooted-story-heading">Rooted in <em>KOLHAPUR</em>,<br />Inspired by <em>SOUTH</em></h2>
+            <p className="rooted-story-description">Driven by values of simplicity, authenticity and excellence, and inspired by the birthplace of Dr. APJ Abdul Kalam – our guiding light.</p>
           </div>
         </div>
       </section>
