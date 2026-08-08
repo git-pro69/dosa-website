@@ -40,7 +40,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: var(--background); }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-body), sans-serif; }
-main { background-color: transparent; background-image: none; }
+main { background-color: color(srgb 0.972549 0.94902 0.913725 / 0.92); background-image: none; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 button, input, textarea { font: inherit; }
@@ -88,12 +88,12 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .brand-ad-copy h2 em { color: var(--primary); }
 .brand-ad-copy > p:last-child { max-width: 430px; margin: 0 auto; color: var(--muted-foreground); font-size: .9rem; line-height: 1.7; }
 
-.statement { width: min(72rem, calc(100% - 80px)); display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 35px 0; border-top: 1px solid var(--border); background-color: transparent; background-image: linear-gradient(90deg, rgba(248, 242, 233, 0.96), rgba(248, 242, 233, 0.64)), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxzDydxPFh4u9QREMx6HKlQV8NfDwW.png"); text-align: center; }
+.statement { width: min(72rem, calc(100% - 80px)); display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 35px 0; border-top: 1px solid var(--border); background-color: color(srgb 0.972549 0.94902 0.913725 / 0.92); background-image: none; text-align: center; }
 .ornament { display: block; width: 52px; height: 52px; object-fit: contain; opacity: .18; filter: saturate(.85); }
 .display-copy { width: 100%; max-width: 72rem; margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; color: rgb(37, 35, 31); text-align: center; }
 .display-copy span { color: rgb(217, 121, 16); }
 .statement-detail { width: 100%; max-width: 72rem; padding-top: 0; text-align: center; }
-.statement-detail p { width: 100%; max-width: 72rem; margin: 17px auto 0; color: rgb(113, 105, 95); font-size: .87rem; line-height: 1.7; font-family: "Inter", sans-serif; text-align: center; }
+.statement-detail p { width: 100%; max-width: 72rem; margin: 17px auto 0; color: rgb(113, 105, 95); font-size: 14px; line-height: 1.7; font-family: "Inter", sans-serif; text-align: center; }
 .statement-detail .eyebrow { color: rgb(37, 35, 31); font-family: "Inter", sans-serif; font-size: 14px; }
 
 .rooted-story { min-height: 620px; background-color: #efe3d7; background-position: center; background-repeat: no-repeat; background-size: cover; color: #25231f; }
