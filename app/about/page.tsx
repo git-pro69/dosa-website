@@ -47,7 +47,7 @@ export default function AboutPage() {
 
       <section className="about-intro about-shell">
         <img src={images.storefront} alt="Davangiri Loni Dosa storefront and cafe interior" />
-        <div className="about-intro-copy"><h2>Our Cafe is our <em>Temple</em>,<br />Our Customers are <em>Gods</em>,<br />& What we serve, is <em>Prasadam</em></h2><p>The Davangiri Loni Dosa cafe is a premium South Indian chain by Mr. Subhash Umarane. We serve authentic cuisine that is fresh, hot, and true to tradition. Every meal is made with care, hygiene, and heart.</p></div>
+        <div className="about-intro-copy"><h2>Our Cafe is our <em>Temple</em>,<br />Our Customers are <em>Gods</em>,<br />& What we serve, is <em>Prasadam</em></h2><p>The Davangiri Loni Dosa Center is a premium South Indian chain by Mr. Subhash Umarane. We serve authentic cuisine that is fresh, hot, and true to tradition. Every meal is made with care, hygiene, and heart.</p></div>
       </section>
 
       <section className="about-founders about-shell"><img src={images.spread} alt="The people behind Davangiri Loni Dosa" /><div><p className="eyebrow">The minds behind</p><h2>The <em>Magic</em></h2><p>Built by people who believe South Indian food deserves a modern stage without losing its soul. Our founders bring hospitality, detail, and an instinct for making every guest feel at home.</p><div className="founder-note"><h3>Divya Raghavendra Rao</h3><p>Co-founder and managing director, bringing thoughtful leadership and a deep love for the rituals that make a cafe feel like family.</p></div></div></section>
