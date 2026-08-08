@@ -60,6 +60,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .desktop-nav a { transition: color .2s ease; }
 .desktop-nav a:hover, .text-link:hover, .light-link:hover { color: var(--primary); }
 .nav-cta, .contact-form button { display: inline-flex; align-items: center; gap: 8px; background: var(--primary); color: var(--primary-foreground); padding: 12px 18px; }
+.about-page .nav-cta:nth-child(6) { background: #FBEC5D; color: rgb(37, 35, 31); }
 .menu-toggle { display: none; border: 0; background: transparent; }
 
 .hero { position: relative; isolation: isolate; display: flex; min-height: min(780px, calc(100svh - 82px)); align-items: center; overflow: hidden; background: #211f1c; color: #fffaf2; }
@@ -83,7 +84,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .brand-ad::after { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(248, 242, 233, .2), rgba(248, 242, 233, .65)); content: ''; }
 .brand-ad-leaf { position: absolute; width: min(360px, 52vw); opacity: .2; mix-blend-mode: multiply; }
 .brand-ad-copy { position: relative; z-index: 1; width: min(100% - 40px, 760px); }
-.brand-ad-copy .eyebrow { color: var(--foreground); font-family: "Inter", sans-serif; font-size: 12px; font-weight: 500; }
+.brand-ad-copy .eyebrow { color: var(--foreground); font-family: "Inter", sans-serif; font-size: 16px; font-weight: 500; text-transform: none; }
 .brand-ad-copy h2 { margin: 18px 0; font-size: clamp(3rem, 6vw, 6rem); line-height: .95; }
 .brand-ad-copy h2 em { color: var(--primary); }
 .brand-ad-copy > p:last-child { max-width: 430px; margin: 0 auto; color: var(--muted-foreground); font-size: .9rem; line-height: 1.7; }
