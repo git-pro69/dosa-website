@@ -22,6 +22,7 @@ const images = {
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
   exterior: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-P24nNopibFdlIQ8f7yZlgQCoGOa0LF.jpeg',
   storyBackdrop: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxzDydxPFh4u9QREMx6HKlQV8NfDwW.png',
+  statementEmblem: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2842%29-cjrx0sEKEUHFOsugYIgUgTJLqyWykF.png',
 }
 
 const navItems = [
@@ -91,7 +92,7 @@ export default function Page() {
       </section>
 
       <section className="statement section-shell">
-        <div className="ornament" aria-hidden="true">✣</div>
+        <img className="ornament" src={images.statementEmblem} alt="" aria-hidden="true" />
         <p className="display-copy">Our cafe is our <span>temple.</span><br />Our customers are <span>gods.</span><br />And what we serve is <span>prasad</span>.</p>
         <div className="statement-detail"><span className="eyebrow">The house note</span><p>From a first tawa at dawn to the last filter coffee of the evening, everything here is made with patience, generosity, and a very particular love for ghee.</p></div>
       </section>

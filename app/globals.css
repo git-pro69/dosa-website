@@ -89,7 +89,7 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .brand-ad-copy > p:last-child { max-width: 430px; margin: 0 auto; color: var(--muted-foreground); font-size: .9rem; line-height: 1.7; }
 
 .statement { width: min(72rem, calc(100% - 80px)); display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 35px 0; border-top: 1px solid var(--border); background-color: transparent; background-image: linear-gradient(90deg, rgba(248, 242, 233, 0.96), rgba(248, 242, 233, 0.64)), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxzDydxPFh4u9QREMx6HKlQV8NfDwW.png"); text-align: center; }
-.ornament { color: var(--primary); font-size: 2rem; }
+.ornament { display: block; width: 52px; height: 52px; object-fit: contain; opacity: .18; filter: saturate(.85); }
 .display-copy { width: 100%; max-width: 72rem; margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; color: rgb(37, 35, 31); text-align: center; }
 .display-copy span { color: rgb(217, 121, 16); }
 .statement-detail { width: 100%; max-width: 72rem; padding-top: 0; text-align: center; }
