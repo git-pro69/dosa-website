@@ -16,7 +16,7 @@ import {
 } from 'lucide-react'
 
 const images = {
-  logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5bxAFzSYeAh0O8GfL2yvpqErduZWsP.png',
+  logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2844%29-OipTcMgxONCwn8v6T3YLdsZKiyQYlB.png',
   cafe: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EoJF11KAiTDtwX7IoFw1CMSpeE83HT.png',
   dosa: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jfPnRqnThQ5Fyj862D8FR5cvkfVbys.png',
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
