@@ -38,6 +38,15 @@ export default function AboutPage() {
         <div className="about-hero-content"><p className="eyebrow">The Davangiri Loni Dosa story</p><h1>South Indian Soul,<br /><em>Modern Bite</em></h1></div>
       </section>
 
+      <section className="brand-ad" aria-label="Davangiri Loni Dosa story">
+        <img className="brand-ad-leaf" src={images.brandLeaf} alt="Green botanical Davangiri emblem" />
+        <div className="brand-ad-copy">
+          <p className="eyebrow">Davangiri Loni Dosa</p>
+          <h2>South Indian Soul,<br /><em>Modern Bite.</em></h2>
+          <p>Hot off the tawa, rooted in tradition, and made for the way you eat now.</p>
+        </div>
+      </section>
+
       <section className="about-intro about-shell">
         <img src={images.cafe} alt="Davangiri Loni Dosa cafe exterior decorated for guests" />
         <div className="about-intro-copy"><h2>Our Cafe is our <em>Temple</em>,<br />Our Customers are <em>Gods</em>,<br />& What we serve, is <em>Prasadam</em></h2><p>The Davangiri Loni Dosa cafe is a premium South Indian chain by M. Abilton Venkatesh Pillai. We serve authentic cuisine that is fresh, hot, and true to tradition. Every meal is made with care, hygiene, and heart.</p></div>
