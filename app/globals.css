@@ -79,6 +79,15 @@ h1 em, h2 em, .display-copy span { color: var(--primary); font-style: italic; }
 .hero-text-link { display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid currentColor; padding-bottom: 6px; color: #fff; font-family: "Inter", sans-serif; font-size: 14px; font-weight: 400; }
 .hero-side-note { position: absolute; right: 0; bottom: 38px; color: rgba(255, 255, 255, .8); font-size: .67rem; letter-spacing: .13em; line-height: 1.6; text-align: right; text-transform: uppercase; }
 
+.brand-ad { position: relative; isolation: isolate; min-height: 500px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: linear-gradient(90deg, rgba(248, 242, 233, .96), rgba(248, 242, 233, .64)), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxzDydxPFh4u9QREMx6HKlQV8NfDwW.png") center / cover no-repeat; color: var(--foreground); text-align: center; }
+.brand-ad::after { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(248, 242, 233, .2), rgba(248, 242, 233, .65)); content: ''; }
+.brand-ad-leaf { position: absolute; width: min(360px, 52vw); opacity: .2; mix-blend-mode: multiply; }
+.brand-ad-copy { position: relative; z-index: 1; width: min(100% - 40px, 760px); }
+.brand-ad-copy .eyebrow { color: var(--foreground); }
+.brand-ad-copy h2 { margin: 18px 0; font-size: clamp(3rem, 6vw, 6rem); line-height: .95; }
+.brand-ad-copy h2 em { color: var(--primary); }
+.brand-ad-copy > p:last-child { max-width: 430px; margin: 0 auto; color: var(--muted-foreground); font-size: .9rem; line-height: 1.7; }
+
 .statement { width: min(72rem, calc(100% - 80px)); display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 35px 0; border-top: 1px solid var(--border); background-color: rgb(0, 128, 0); text-align: center; }
 .ornament { color: var(--primary); font-size: 2rem; }
 .display-copy { width: 100%; max-width: 72rem; margin: 0; font-size: clamp(2.8rem, 5.4vw, 5.7rem); line-height: .95; color: rgb(255, 255, 255); text-align: center; }
@@ -185,6 +194,10 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
   .hero h1 { font-size: clamp(4rem, 18vw, 6rem); }
   .hero-actions { gap: 18px; }
   .hero-side-note { display: none; }
+  .brand-ad { min-height: 430px; }
+  .brand-ad-leaf { width: min(280px, 72vw); }
+  .brand-ad-copy h2 { font-size: clamp(2.8rem, 12vw, 4.8rem); }
+  .brand-ad-copy > p:last-child { font-size: .82rem; }
   .statement { width: min(72rem, calc(100% - 40px)); gap: 20px; padding: 80px 0; }
   .statement-detail { width: 100%; max-width: 72rem; padding: 0; }
   .statement-detail p { width: 100%; max-width: 72rem; text-align: center; }

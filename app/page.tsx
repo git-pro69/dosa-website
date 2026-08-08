@@ -22,6 +22,7 @@ const images = {
   spread: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fRAUVhdZPSxBG0BnWUpWOkxCPi84Je.png',
   exterior: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-P24nNopibFdlIQ8f7yZlgQCoGOa0LF.jpeg',
   storyBackdrop: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DxzDydxPFh4u9QREMx6HKlQV8NfDwW.png',
+  brandLeaf: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2842%29-786iES9SntiYvnWamVKc7yKe6a864o.png',
 }
 
 const navItems = [
@@ -87,6 +88,15 @@ export default function Page() {
             </div>
           </div>
           <div className="hero-side-note">Come hungry<br />leave lighter</div>
+        </div>
+      </section>
+
+      <section className="brand-ad" aria-label="Davangiri Loni Dosa story">
+        <img className="brand-ad-leaf" src={images.brandLeaf} alt="Green botanical Davangiri emblem" />
+        <div className="brand-ad-copy">
+          <p className="eyebrow">Davangiri Loni Dosa</p>
+          <h2>South Indian Soul,<br /><em>Modern Bite.</em></h2>
+          <p>Hot off the tawa, rooted in tradition, and made for the way you eat now.</p>
         </div>
       </section>
 
