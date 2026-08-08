@@ -10,6 +10,7 @@ const images = {
   dosa: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jfPnRqnThQ5Fyj862D8FR5cvkfVbys.png',
   heroTexture: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-axL60KLm5JxoSQ2vmVZcAXpbYe7aEl.png',
   story: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XZ2lMuRF2rfIKq1ByB5unQwxe3tuKU.png',
+  brandLeaf: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2842%29-josVdKhrWztoNGP3257mYMMguS0vfc.png',
 }
 
 const navItems = [
@@ -33,10 +34,6 @@ export default function AboutPage() {
         </nav>
         <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button>
       </header>
-
-      <section className="about-hero">
-        <div className="about-hero-content"><p className="eyebrow">The Davangiri Loni Dosa story</p><h1>South Indian Soul,<br /><em>Modern Bite</em></h1></div>
-      </section>
 
       <section className="brand-ad" aria-label="Davangiri Loni Dosa story">
         <img className="brand-ad-leaf" src={images.brandLeaf} alt="Green botanical Davangiri emblem" />
