@@ -332,7 +332,7 @@ blockquote { max-width: 900px; margin: 25px auto; font-size: clamp(2.5rem, 5vw, 
 }
 
 @media (max-width: 800px) {
-  .menu-reference-hero { height: clamp(360px, 74vw, 500px); min-height: 0; }
+  .menu-reference-hero { display: block; width: 100%; height: clamp(420px, 108vw, 500px); min-height: 420px; position: relative; isolation: isolate; }
   .menu-reference-art { z-index: 0; width: min(72vw, 340px); opacity: .1; }
   .menu-reference-copy { z-index: 1; }
   .menu-reference-copy h1 { position: relative; z-index: 1; }
